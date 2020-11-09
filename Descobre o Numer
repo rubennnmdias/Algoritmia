@@ -1,0 +1,22 @@
+Random r = new Random();
+int = numeroRandom = r.Next(0,101);
+bool sugestaodoJogador = true;
+While (sugestãodoJogador)
+{
+  Console.WriteLine("Qual é o numero secreto?");
+  int sugestao = Convert.ToInt32(Console.ReadLine());
+  
+  if (sugestão == secretNumber)
+  {
+    Console.WritLine(" Parabéns, descobriu o numero!");
+    break;
+  }
+  else if (sugestao < numeroRandom)
+  {
+    Console.WriteLine("o numero secreto é maior");
+  }
+  else
+  {
+  Console.WriteLine("O numero secreto é menor");
+  }
+ 
