@@ -1,0 +1,34 @@
+Random r = new Random;
+            int hpPTwo = 100; 
+            int hpPOne-hpPTwo; // vidas do p1 e p2
+
+            int pOneAttackA = r.Next(1, 10);
+            int pOneAttackB = r.Next(1, 10);
+
+            int pTwoAttackA = r.Next(1, 10);
+            int pTwoAttackB = r.Next(1, 10);
+
+            bool ko = false;
+            int countTurns = 0;
+
+            while (!ko)
+            {
+                countTurns++;
+                int decisionPOne = r.Next(0, 3); // 0- attack A, 1- Attack B, 2 Block
+                int decisionPTwo = r.Next(0, 3); // 0- attack A, 1- Attack B, 2 Block
+
+                if(decisionPOne!=2 && decisionPTwo != 2) //os dois decidem atacar
+                {
+                    decisionPOne = decisionPOne == 0 ? pOneAttackA : pOneAttackB;
+                    decisionPTwo = decisionPTwo == 0 ? pTwoAttackA : pTwoAttackB;
+                    hpPOne -= decisionPTwo;
+                    hpPTwo -= decisionPOne;
+                }
+
+                if (hpPOne <= 0 || hpPTwo <= 0) ko = true; // caso um dos jogadores tenha vida inderior ou igual a zero o combate termina
+
+            }
+            {
+                string vencedor = hpPOne > hpPTwo ? "PlayerOne" : "Player two";
+                Console.WriteLine($"O Vencedor foi {vencedor} em {countTurns} turnos ");
+            }
