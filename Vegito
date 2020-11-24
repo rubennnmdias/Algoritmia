@@ -1,0 +1,21 @@
+{
+
+int attack1=50;
+int attack2=50;
+
+int defense1 = 100;
+int defense2 = 100;
+
+int intellect1 = 20;
+int intellect2 = 30;
+
+int totalattack;
+int totaldefense;
+int totalintellect;
+
+totalattack = ( attack1 + attack2 ) / 2;
+total defense = (defense1 + defense2) / 2;
+total intellect = (intellect1 + intellect2) / 2;
+
+Console.WriteLine("The fusion made an average of " + totalattack; + " points of attack, /n" + "points of defense and /n" + totalintellect + " points of intellect);
+}
