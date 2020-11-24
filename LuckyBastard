@@ -1,0 +1,11 @@
+{
+  Random r = new Random();
+  int health = 100;
+  health -= r.Next(0,50);
+  Console.WriteLine("O jogador tem" + health + "Pontos de vida!");
+  health -= r.Next(0,49);
+  Console.WriteLine("O jogador tem" + health + "Pontos de Vida!");
+  health -= health - 1;
+  Console.WriteLine("O Jogador tem" + health + "Pontos de Vida!");
+  Console.WriteLine("Lucky!");
+}
