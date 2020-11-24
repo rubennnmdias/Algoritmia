@@ -1,0 +1,28 @@
+Random r = new Random();
+int posX;
+int posY;
+
+posX = r.Next(1,501); //Para ser mostrado no canvas
+posY = r.Next(1,501);
+
+if (posX > 250)
+{
+  if(posY > 250)
+  {
+    Console.WriteLine("Player está à esquerda na parte de cima);
+  }
+  else
+  {
+    Console.WriteLine("Player está à esquerda na parte de baixo);
+  }
+}
+else
+{
+  if(posY > 250)
+  {
+    Console.WriteLine("Player está à direita na parte de cima" );
+  }
+  else
+  {
+  Console.WriteLine("Player está à direita na parte de baixo");
+  }
