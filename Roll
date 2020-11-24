@@ -1,0 +1,16 @@
+Random r = new Random();
+int player1;
+int player2;
+
+if (player1 < player2)
+{
+  Console.WriteLine("Player 2 leva o item");
+}
+else if (player 1 > player 2)
+{
+  Console.WriteLine("Player 1 leva o Item");
+}
+Else
+{
+  Console.WriteLine("Rerro11")
+}
