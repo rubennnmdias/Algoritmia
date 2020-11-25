@@ -1,0 +1,67 @@
+Random r = new Random();
+
+int player1;
+int player2;
+int player3;
+
+player1 = r.Next(10);
+player2 = r.Next(10);
+player3 = r.Next(10);
+
+if ( player1 > player2 && player1 > player3)
+{
+  
+  Console.WriteLine("1º: " + player1);
+  if(player2 > player3)
+  {
+    Console.WriteLine("2º: " + player2);
+    Console.WriteLine("3º: " + player3);
+   }
+   else if (player2 < player 3)
+   {
+    Console.WriteLine(" 2º: " + player 3);
+    Console.WriteLine("3º: " + player 2);
+   }
+   else 
+   {
+    Console.WriteLine("Reroll");
+    }
+  }
+  else if (player 2 > player 1 && player2 > player3)
+    {
+      Console.WriteLine("1º: " + player2);
+      if( player1 > player3)
+        {
+          Console.WriteLine("2º: " + player1);
+          Console.WriteLine("3º: " + player3);
+         }
+   else if (player1 < player3)
+      {
+        Console.WriteLine("2º: " + player3);
+        Console.WriteLine("3º: " + player1);
+      }
+      else
+      {
+        Console.WriteLine("Reroll");
+      }
+      
+    }
+    else if( player3 > player1 && player3 > player2)
+    {
+      Console.WriteLine("1º: " + player3);
+      if(player1 > player2)
+      {
+        Console.WriteLine("2º: " + player1);
+        Console.WriteLine("3º: " + player2);
+       }
+       else if(player1 < player2)
+       {
+         Console.WriteLine("2º: " + player2);
+         Console.WriteLine("3º: " + player1);
+       }
+       else
+       {
+          Console.WriteLine("Reroll");
+        }
+       }
+    }
