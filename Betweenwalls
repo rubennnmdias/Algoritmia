@@ -1,0 +1,11 @@
+Random r = new Random();
+int n_min = r.Next(1,100);
+int n_max = r.Next(1,100);
+
+Console.WriteLine("Min" + n_min);
+Console.WriteLine("Max" + n_max);
+
+for(int i = n_min + 1; i < n_max; i++)
+{
+  Console.WriteLine(i);
+}
