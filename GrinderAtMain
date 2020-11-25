@@ -1,0 +1,14 @@
+Random r = new Random();
+
+int grinder;
+int creature;
+int avg;
+
+grinder = r.Next(1000, 10001);
+creature = r.Next(35,66);
+avg= grinder /creature;
+
+if (avg > 10000)
+{
+  Console.writeLine("Achivement unlocked Grinder!");
+ }
